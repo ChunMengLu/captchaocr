@@ -219,3 +219,7 @@ docker logs -f captchaocr
 - FastAPI: 现代、快速的 Web 框架
 - ddddocr: 验证码识别库
 - uvicorn: ASGI 服务器
+
+## 许可证
+
+本项目采用 MIT 许可证开源。详见 [LICENSE](LICENSE) 文件。
