@@ -5,7 +5,8 @@ WORKDIR /app
 # 安装系统依赖
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    libgl1-mesa-glx \
+    libgl1 \
+    libglx0 \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
@@ -23,4 +24,3 @@ EXPOSE 5000
 
 # 启动命令
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
-
